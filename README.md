@@ -44,3 +44,11 @@ ng serve --open
 1. Ejecutar creation.sql
 2. Ejecutar query.sql
 ```
+
+## Explicación:
+
+La solucion consiste en 2 ejercicios por separado.
+
+1. En el Proyecto hecho con angular para la visualizacion de variaciones mensuales de fondos, se utilizó la API de [Fintualist](https://fintual.cl/api-docs/index.html), se implementaron servicios para obtener datos de la API, agrupar los datos por año-mes, normalizar los datos, calcular la variacion mensual y se integró con ng2-charts para la visualizacion de un grafico de lineas.
+
+2. Scripts de creacion y consultas. Se tiene un script para crear 2 tablas en donde se ejecutarán las consultas solicitadas. Se utilizó la base de datos PostgreSQL.
