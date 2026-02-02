@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #eee;
+}
+
+.year-select {
+    padding: 2px 4px;
+    font-size: 16px;
+    width: 120px;
+}
+
+.month-select {
+    padding: 2px 4px;
+    font-size: 16px;
+    width: 120px;
+}
+
+.chart-container {
+    width: 75%;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.chart-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 2rem;
+    color: #333333;
+}
+
+.chart-filters {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    margin-bottom: 32px;
+    gap: 64px;
+}
+
+.start-filters, .end-filters {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.btn-filter {
+    width: 16rem;
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-filter:hover {
+    background-color: #0056b3;
+}

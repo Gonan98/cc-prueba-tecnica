@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="chart-container">
+    <h1 class="chart-title">Variación mensual de fondos</h1>
+    <div class="chart-filters">
+      <div class="start-filters">
+        <label for="startYear">Desde: </label>
+        <select class="year-select" id="startYear" [formControl]="yearStartSelector">
+          @for (year of years; track $index) {
+            <option [value]="year">{{ year }}</option>
+          }
+        </select>
+        <select class="month-select" id="startMonth" [formControl]="monthStartSelector">
+          @for (month of months; track $index) {
+            <option [value]="$index + 1">{{ month }}</option>
+          }
+        </select>
+      </div>
+      <div class="end-filters">
+        <label for="endYear">Hasta: </label>
+        <select class="year-select" id="endYear" [formControl]="yearEndSelector">
+          @for (year of years; track $index) {
+            <option [value]="year">{{ year }}</option>
+          }
+        </select>
+        <select class="month-select" id="endMonth" [formControl]="monthEndSelector">
+          @for (month of months; track $index) {
+            <option [value]="$index + 1">{{ month }}</option>
+          }
+        </select>
+      </div>
+    </div>
+    <div class="btn-container">
+        <button class="btn-filter" type="button" (click)="applyFilters()">Filtrar</button>
+    </div>
+    <canvas baseChart [data]="chartData()" [options]="chartOptions" [type]="'line'"></canvas>
+  </div>
+</div>
